@@ -16,6 +16,5 @@ namespace CHS.Models
         public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<Service> Services { get; set; }
         public virtual ICollection<Content> Contents { get; set; }
-        // change omara 2
     }
 }
