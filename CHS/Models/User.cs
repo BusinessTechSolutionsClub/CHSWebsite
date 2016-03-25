@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+// James Comment 1
+
 namespace CHS.Models
 {
     public class User
