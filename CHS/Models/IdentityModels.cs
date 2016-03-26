@@ -32,5 +32,7 @@ namespace CHS.Models
 
         public DbSet<User> Users1 { get; set; }
         public DbSet<Product> Products { get; set; }
+
+        public System.Data.Entity.DbSet<CHS.Models.Service> Services { get; set; }
     }
 }
