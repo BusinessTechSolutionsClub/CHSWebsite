@@ -36,5 +36,7 @@ namespace CHS.Models
         public System.Data.Entity.DbSet<CHS.Models.Service> Services { get; set; }
 
         public System.Data.Entity.DbSet<CHS.Models.Navigation> Navigations { get; set; }
+
+        public System.Data.Entity.DbSet<CHS.Models.Content> Contents { get; set; }
     }
 }

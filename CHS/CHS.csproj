@@ -196,6 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NavigationsController.cs" />
@@ -207,6 +208,10 @@
     <Compile Include="Migrations\201603232129447_Change1.cs" />
     <Compile Include="Migrations\201603232129447_Change1.Designer.cs">
       <DependentUpon>201603232129447_Change1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604051949216_reset relationship between navigation and content.cs" />
+    <Compile Include="Migrations\201604051949216_reset relationship between navigation and content.Designer.cs">
+      <DependentUpon>201604051949216_reset relationship between navigation and content.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -306,6 +311,11 @@
     <Content Include="Views\Navigations\Details.cshtml" />
     <Content Include="Views\Navigations\Edit.cshtml" />
     <Content Include="Views\Navigations\Index.cshtml" />
+    <Content Include="Views\Contents\Create.cshtml" />
+    <Content Include="Views\Contents\Delete.cshtml" />
+    <Content Include="Views\Contents\Details.cshtml" />
+    <Content Include="Views\Contents\Edit.cshtml" />
+    <Content Include="Views\Contents\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -318,6 +328,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201603232129447_Change1.resx">
       <DependentUpon>201603232129447_Change1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604051949216_reset relationship between navigation and content.resx">
+      <DependentUpon>201604051949216_reset relationship between navigation and content.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
