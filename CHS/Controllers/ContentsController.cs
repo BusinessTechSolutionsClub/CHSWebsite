@@ -14,10 +14,17 @@ namespace CHS.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Contents
+
         public ActionResult Index()
         {
-            return View(db.Contents.ToList());
+            var contents = db.Contents.ToArray();
+            return View(contents);
+        }
+        // GET: Contents to update
+        public ActionResult ContentManagementIndex()
+        {
+            var contents = db.Contents.Include(c => c.navigations);
+            return View(contents.ToList());
         }
 
         // GET: Contents/Details/5
@@ -38,6 +45,7 @@ namespace CHS.Controllers
         // GET: Contents/Create
         public ActionResult Create()
         {
+            ViewBag.NavigationId = new SelectList(db.Navigations, "Id", "Title");
             return View();
         }
 
@@ -46,7 +54,7 @@ namespace CHS.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,NavigationLinkId,NavLinkDescription,ContentDetails")] Content content)
+        public ActionResult Create([Bind(Include = "Id,NavigationId,NavLinkDescription,ContentDetails")] Content content)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +63,7 @@ namespace CHS.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.NavigationId = new SelectList(db.Navigations, "Id", "Title", content.NavigationId);
             return View(content);
         }
 
@@ -70,6 +79,7 @@ namespace CHS.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.NavigationId = new SelectList(db.Navigations, "Id", "Title", content.NavigationId);
             return View(content);
         }
 
@@ -78,7 +88,7 @@ namespace CHS.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,NavigationLinkId,NavLinkDescription,ContentDetails")] Content content)
+        public ActionResult Edit([Bind(Include = "Id,NavigationId,NavLinkDescription,ContentDetails")] Content content)
         {
             if (ModelState.IsValid)
             {
@@ -86,6 +96,7 @@ namespace CHS.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.NavigationId = new SelectList(db.Navigations, "Id", "Title", content.NavigationId);
             return View(content);
         }
 

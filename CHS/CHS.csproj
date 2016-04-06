@@ -195,6 +195,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -212,6 +213,26 @@
     <Compile Include="Migrations\201604051949216_reset relationship between navigation and content.cs" />
     <Compile Include="Migrations\201604051949216_reset relationship between navigation and content.Designer.cs">
       <DependentUpon>201604051949216_reset relationship between navigation and content.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604060114370_NavigationLinkId replaced.cs" />
+    <Compile Include="Migrations\201604060114370_NavigationLinkId replaced.Designer.cs">
+      <DependentUpon>201604060114370_NavigationLinkId replaced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604060150140_AddNavId.cs" />
+    <Compile Include="Migrations\201604060150140_AddNavId.Designer.cs">
+      <DependentUpon>201604060150140_AddNavId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604060157449_change2.cs" />
+    <Compile Include="Migrations\201604060157449_change2.Designer.cs">
+      <DependentUpon>201604060157449_change2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604060304555_fixed table.cs" />
+    <Compile Include="Migrations\201604060304555_fixed table.Designer.cs">
+      <DependentUpon>201604060304555_fixed table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604060321551_FixingRelationship2.cs" />
+    <Compile Include="Migrations\201604060321551_FixingRelationship2.Designer.cs">
+      <DependentUpon>201604060321551_FixingRelationship2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -315,7 +336,14 @@
     <Content Include="Views\Contents\Delete.cshtml" />
     <Content Include="Views\Contents\Details.cshtml" />
     <Content Include="Views\Contents\Edit.cshtml" />
+    <Content Include="Views\Contents\ContentManagementIndex.cshtml" />
     <Content Include="Views\Contents\Index.cshtml" />
+    <Content Include="Views\Contents1\Create.cshtml" />
+    <Content Include="Views\Contents1\Delete.cshtml" />
+    <Content Include="Views\Contents1\Details.cshtml" />
+    <Content Include="Views\Contents1\Edit.cshtml" />
+    <Content Include="Views\Contents1\Index.cshtml" />
+    <Content Include="Views\AboutUs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -331,6 +359,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604051949216_reset relationship between navigation and content.resx">
       <DependentUpon>201604051949216_reset relationship between navigation and content.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604060114370_NavigationLinkId replaced.resx">
+      <DependentUpon>201604060114370_NavigationLinkId replaced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604060150140_AddNavId.resx">
+      <DependentUpon>201604060150140_AddNavId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604060157449_change2.resx">
+      <DependentUpon>201604060157449_change2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604060304555_fixed table.resx">
+      <DependentUpon>201604060304555_fixed table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604060321551_FixingRelationship2.resx">
+      <DependentUpon>201604060321551_FixingRelationship2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
