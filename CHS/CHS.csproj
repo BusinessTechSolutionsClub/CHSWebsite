@@ -197,6 +197,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
@@ -239,6 +240,14 @@
     <Compile Include="Migrations\201604070152154_CleaningDatabase.cs" />
     <Compile Include="Migrations\201604070152154_CleaningDatabase.Designer.cs">
       <DependentUpon>201604070152154_CleaningDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604070348378_changedVariableInContactUs.cs" />
+    <Compile Include="Migrations\201604070348378_changedVariableInContactUs.Designer.cs">
+      <DependentUpon>201604070348378_changedVariableInContactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604070357192_updateContactUs.cs" />
+    <Compile Include="Migrations\201604070357192_updateContactUs.Designer.cs">
+      <DependentUpon>201604070357192_updateContactUs.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutUs.cs" />
@@ -341,6 +350,11 @@
     <Content Include="Views\AboutUs\Edit.cshtml" />
     <Content Include="Views\AboutUs\Index.cshtml" />
     <Content Include="Views\AboutUs\ManageContent.cshtml" />
+    <Content Include="Views\ContactUs\Create.cshtml" />
+    <Content Include="Views\ContactUs\Delete.cshtml" />
+    <Content Include="Views\ContactUs\Details.cshtml" />
+    <Content Include="Views\ContactUs\Edit.cshtml" />
+    <Content Include="Views\ContactUs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -377,6 +391,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604070152154_CleaningDatabase.resx">
       <DependentUpon>201604070152154_CleaningDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070348378_changedVariableInContactUs.resx">
+      <DependentUpon>201604070348378_changedVariableInContactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070357192_updateContactUs.resx">
+      <DependentUpon>201604070357192_updateContactUs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

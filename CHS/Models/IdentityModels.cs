@@ -38,6 +38,6 @@ namespace CHS.Models
         public System.Data.Entity.DbSet<CHS.Models.HomePage> HomePages { get; set; }
         public System.Data.Entity.DbSet<CHS.Models.Service> Services { get; set; }
 
-       
+        public System.Data.Entity.DbSet<CHS.Models.ContactUs> ContactUs { get; set; }
     }
 }
