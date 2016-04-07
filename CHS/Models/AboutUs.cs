@@ -5,9 +5,10 @@ using System.Web;
 
 namespace CHS.Models
 {
-    public class Navigation
+    public class AboutUs
     {
         public int Id { get; set; }
-        public string Title { get; set; }
+        public string ContentShortDescription { get; set; }
+        public string Content { get; set; }
     }
 }

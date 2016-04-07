@@ -197,10 +197,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ContentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\NavigationsController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -234,12 +232,20 @@
     <Compile Include="Migrations\201604060321551_FixingRelationship2.Designer.cs">
       <DependentUpon>201604060321551_FixingRelationship2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604070044467_AboutUsAndHomePageTables.cs" />
+    <Compile Include="Migrations\201604070044467_AboutUsAndHomePageTables.Designer.cs">
+      <DependentUpon>201604070044467_AboutUsAndHomePageTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604070152154_CleaningDatabase.cs" />
+    <Compile Include="Migrations\201604070152154_CleaningDatabase.Designer.cs">
+      <DependentUpon>201604070152154_CleaningDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AboutUs.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Content.cs" />
+    <Compile Include="Models\HomePage.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Navigation.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Service.cs" />
     <Compile Include="Models\User.cs" />
@@ -251,6 +257,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CHSStyles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -327,23 +334,12 @@
     <Content Include="Views\Services\Details.cshtml" />
     <Content Include="Views\Services\Edit.cshtml" />
     <Content Include="Views\Services\Index.cshtml" />
-    <Content Include="Views\Navigations\Create.cshtml" />
-    <Content Include="Views\Navigations\Delete.cshtml" />
-    <Content Include="Views\Navigations\Details.cshtml" />
-    <Content Include="Views\Navigations\Edit.cshtml" />
-    <Content Include="Views\Navigations\Index.cshtml" />
-    <Content Include="Views\Contents\Create.cshtml" />
-    <Content Include="Views\Contents\Delete.cshtml" />
-    <Content Include="Views\Contents\Details.cshtml" />
-    <Content Include="Views\Contents\Edit.cshtml" />
-    <Content Include="Views\Contents\ContentManagementIndex.cshtml" />
-    <Content Include="Views\Contents\Index.cshtml" />
-    <Content Include="Views\Contents1\Create.cshtml" />
-    <Content Include="Views\Contents1\Delete.cshtml" />
-    <Content Include="Views\Contents1\Details.cshtml" />
-    <Content Include="Views\Contents1\Edit.cshtml" />
-    <Content Include="Views\Contents1\Index.cshtml" />
+    <Content Include="Views\AboutUs\Create.cshtml" />
+    <Content Include="Views\AboutUs\Delete.cshtml" />
+    <Content Include="Views\AboutUs\Details.cshtml" />
+    <Content Include="Views\AboutUs\Edit.cshtml" />
     <Content Include="Views\AboutUs\Index.cshtml" />
+    <Content Include="Views\AboutUs\ManageContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -374,6 +370,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604060321551_FixingRelationship2.resx">
       <DependentUpon>201604060321551_FixingRelationship2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070044467_AboutUsAndHomePageTables.resx">
+      <DependentUpon>201604070044467_AboutUsAndHomePageTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070152154_CleaningDatabase.resx">
+      <DependentUpon>201604070152154_CleaningDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
