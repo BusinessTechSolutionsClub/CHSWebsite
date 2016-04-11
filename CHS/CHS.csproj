@@ -355,6 +355,7 @@
     <Content Include="Views\ContactUs\Details.cshtml" />
     <Content Include="Views\ContactUs\Edit.cshtml" />
     <Content Include="Views\ContactUs\Index.cshtml" />
+    <Content Include="Views\ContactUs\ManageContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

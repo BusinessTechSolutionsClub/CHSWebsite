@@ -17,6 +17,14 @@ namespace CHS.Controllers
         // GET: ContactUs
         public ActionResult Index()
         {
+            var content = db.ContactUs.ToArray();
+            ViewBag.Address = content[0].Address;
+            ViewBag.CellPhoneNumber = content[0].CellPhoneNumber;
+            return View();
+        }
+
+        public ActionResult ManageContent()
+        {
             return View(db.ContactUs.ToList());
         }
 
@@ -52,7 +60,7 @@ namespace CHS.Controllers
             {
                 db.ContactUs.Add(contactUs);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("ManageContent");
             }
 
             return View(contactUs);
@@ -84,7 +92,7 @@ namespace CHS.Controllers
             {
                 db.Entry(contactUs).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("ManageContent");
             }
             return View(contactUs);
         }
@@ -112,7 +120,7 @@ namespace CHS.Controllers
             ContactUs contactUs = db.ContactUs.Find(id);
             db.ContactUs.Remove(contactUs);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("ManageContent");
         }
 
         protected override void Dispose(bool disposing)
