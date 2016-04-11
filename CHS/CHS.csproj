@@ -199,6 +199,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HoursOfOperationsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
@@ -249,11 +250,20 @@
     <Compile Include="Migrations\201604070357192_updateContactUs.Designer.cs">
       <DependentUpon>201604070357192_updateContactUs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604110230488_HoursOfOperationTable.cs" />
+    <Compile Include="Migrations\201604110230488_HoursOfOperationTable.Designer.cs">
+      <DependentUpon>201604110230488_HoursOfOperationTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604110236326_HoursOfOperationTable1.cs" />
+    <Compile Include="Migrations\201604110236326_HoursOfOperationTable1.Designer.cs">
+      <DependentUpon>201604110236326_HoursOfOperationTable1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutUs.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ContactUs.cs" />
     <Compile Include="Models\HomePage.cs" />
+    <Compile Include="Models\HoursOfOperation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Product.cs" />
@@ -355,7 +365,12 @@
     <Content Include="Views\ContactUs\Details.cshtml" />
     <Content Include="Views\ContactUs\Edit.cshtml" />
     <Content Include="Views\ContactUs\Index.cshtml" />
-    <Content Include="Views\ContactUs\ManageContent.cshtml" />
+    <Content Include="Views\HoursOfOperations\Create.cshtml" />
+    <Content Include="Views\HoursOfOperations\Delete.cshtml" />
+    <Content Include="Views\HoursOfOperations\Details.cshtml" />
+    <Content Include="Views\HoursOfOperations\Edit.cshtml" />
+    <Content Include="Views\HoursOfOperations\Index.cshtml" />
+    <Content Include="Views\HoursOfOperations\ManageContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -398,6 +413,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604070357192_updateContactUs.resx">
       <DependentUpon>201604070357192_updateContactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604110230488_HoursOfOperationTable.resx">
+      <DependentUpon>201604110230488_HoursOfOperationTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604110236326_HoursOfOperationTable1.resx">
+      <DependentUpon>201604110236326_HoursOfOperationTable1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

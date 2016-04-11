@@ -1,0 +1,48 @@
+﻿@model IEnumerable<CHS.Models.HoursOfOperation>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Hours Of Operations</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @item.dayOfWeek
+                                </td>
+                                <td>
+                                    @item.openTime
+                                </td>
+                                <td>
+                                    @item.closeTime
+                                </td>
+                            </tr>
+
+                        }
+
+                          
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+
+
+
