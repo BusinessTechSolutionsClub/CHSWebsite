@@ -21,9 +21,12 @@ namespace CHS.Models
         public virtual ICollection<HomePage>Home { get; set; }
         public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<Service> Services { get; set; }
+        public virtual ICollection<AboutUs> HoursOfOperation { get; set; }
     }
 }
 
 //Testing push, Matthew
 //Testing, Vika comment
 //Dasril Comment 1
+// Mitch Comment 1
+// Mitch Comment 2
