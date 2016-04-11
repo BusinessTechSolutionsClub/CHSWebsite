@@ -25,6 +25,7 @@ namespace CHS.Controllers
             return View(content);
         }
 
+      
         public ActionResult ManageContent()
         {
             return View(db.AboutUs.ToList());
