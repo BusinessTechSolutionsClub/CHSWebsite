@@ -20,6 +20,11 @@ namespace CHS.Controllers
             return View(db.Services.ToList());
         }
 
+        public ActionResult ManageContent()
+        {
+            return View(db.Services.ToList());
+        }
+
         // GET: Services/Details/5
         public ActionResult Details(int? id)
         {
@@ -52,7 +57,7 @@ namespace CHS.Controllers
             {
                 db.Services.Add(service);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("ManageContent");
             }
 
             return View(service);
@@ -84,7 +89,7 @@ namespace CHS.Controllers
             {
                 db.Entry(service).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("ManageContent");
             }
             return View(service);
         }
@@ -112,7 +117,7 @@ namespace CHS.Controllers
             Service service = db.Services.Find(id);
             db.Services.Remove(service);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("ManageContent");
         }
 
         protected override void Dispose(bool disposing)
