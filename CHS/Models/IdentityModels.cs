@@ -33,6 +33,7 @@ namespace CHS.Models
 
         //Adding tables to the database
         public DbSet<User> Users1 { get; set; }
+        public DbSet<HoursOfOperation> HoursOfOperations { get; set; }
         public DbSet<Product> Products { get; set; }
         public System.Data.Entity.DbSet<CHS.Models.AboutUs> AboutUs { get; set; }
         public System.Data.Entity.DbSet<CHS.Models.HomePage> HomePages { get; set; }
