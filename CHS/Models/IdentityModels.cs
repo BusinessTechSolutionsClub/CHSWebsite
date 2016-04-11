@@ -30,9 +30,15 @@ namespace CHS.Models
             return new ApplicationDbContext();
         }
 
-        public DbSet<User> Users1 { get; set; }
-        public DbSet<Product> Products { get; set; }
 
+        //Adding tables to the database
+        public DbSet<User> Users1 { get; set; }
+        public DbSet<HoursOfOperation> HoursOfOperations { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public System.Data.Entity.DbSet<CHS.Models.AboutUs> AboutUs { get; set; }
+        public System.Data.Entity.DbSet<CHS.Models.HomePage> HomePages { get; set; }
         public System.Data.Entity.DbSet<CHS.Models.Service> Services { get; set; }
+
+        public System.Data.Entity.DbSet<CHS.Models.ContactUs> ContactUs { get; set; }
     }
 }

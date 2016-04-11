@@ -195,8 +195,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HoursOfOperationsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
@@ -207,12 +210,62 @@
     <Compile Include="Migrations\201603232129447_Change1.Designer.cs">
       <DependentUpon>201603232129447_Change1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604051949216_reset relationship between navigation and content.cs" />
+    <Compile Include="Migrations\201604051949216_reset relationship between navigation and content.Designer.cs">
+      <DependentUpon>201604051949216_reset relationship between navigation and content.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604060114370_NavigationLinkId replaced.cs" />
+    <Compile Include="Migrations\201604060114370_NavigationLinkId replaced.Designer.cs">
+      <DependentUpon>201604060114370_NavigationLinkId replaced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604060150140_AddNavId.cs" />
+    <Compile Include="Migrations\201604060150140_AddNavId.Designer.cs">
+      <DependentUpon>201604060150140_AddNavId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604060157449_change2.cs" />
+    <Compile Include="Migrations\201604060157449_change2.Designer.cs">
+      <DependentUpon>201604060157449_change2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604060304555_fixed table.cs" />
+    <Compile Include="Migrations\201604060304555_fixed table.Designer.cs">
+      <DependentUpon>201604060304555_fixed table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604060321551_FixingRelationship2.cs" />
+    <Compile Include="Migrations\201604060321551_FixingRelationship2.Designer.cs">
+      <DependentUpon>201604060321551_FixingRelationship2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604070044467_AboutUsAndHomePageTables.cs" />
+    <Compile Include="Migrations\201604070044467_AboutUsAndHomePageTables.Designer.cs">
+      <DependentUpon>201604070044467_AboutUsAndHomePageTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604070152154_CleaningDatabase.cs" />
+    <Compile Include="Migrations\201604070152154_CleaningDatabase.Designer.cs">
+      <DependentUpon>201604070152154_CleaningDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604070348378_changedVariableInContactUs.cs" />
+    <Compile Include="Migrations\201604070348378_changedVariableInContactUs.Designer.cs">
+      <DependentUpon>201604070348378_changedVariableInContactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604070357192_updateContactUs.cs" />
+    <Compile Include="Migrations\201604070357192_updateContactUs.Designer.cs">
+      <DependentUpon>201604070357192_updateContactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604110230488_HoursOfOperationTable.cs" />
+    <Compile Include="Migrations\201604110230488_HoursOfOperationTable.Designer.cs">
+      <DependentUpon>201604110230488_HoursOfOperationTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604110236326_HoursOfOperationTable1.cs" />
+    <Compile Include="Migrations\201604110236326_HoursOfOperationTable1.Designer.cs">
+      <DependentUpon>201604110236326_HoursOfOperationTable1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AboutUs.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Content.cs" />
+    <Compile Include="Models\ContactUs.cs" />
+    <Compile Include="Models\HomePage.cs" />
+    <Compile Include="Models\HoursOfOperation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Navigation.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Service.cs" />
     <Compile Include="Models\User.cs" />
@@ -220,8 +273,11 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CHSStyles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -233,9 +289,18 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-2.2.1.js" />
+    <Content Include="Scripts\jquery-2.2.1.min.js" />
+    <Content Include="Scripts\jquery-2.2.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -289,22 +354,71 @@
     <Content Include="Views\Services\Details.cshtml" />
     <Content Include="Views\Services\Edit.cshtml" />
     <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\AboutUs\Create.cshtml" />
+    <Content Include="Views\AboutUs\Delete.cshtml" />
+    <Content Include="Views\AboutUs\Details.cshtml" />
+    <Content Include="Views\AboutUs\Edit.cshtml" />
+    <Content Include="Views\AboutUs\Index.cshtml" />
+    <Content Include="Views\AboutUs\ManageContent.cshtml" />
+    <Content Include="Views\ContactUs\Create.cshtml" />
+    <Content Include="Views\ContactUs\Delete.cshtml" />
+    <Content Include="Views\ContactUs\Details.cshtml" />
+    <Content Include="Views\ContactUs\Edit.cshtml" />
+    <Content Include="Views\ContactUs\Index.cshtml" />
+    <Content Include="Views\HoursOfOperations\Create.cshtml" />
+    <Content Include="Views\HoursOfOperations\Delete.cshtml" />
+    <Content Include="Views\HoursOfOperations\Details.cshtml" />
+    <Content Include="Views\HoursOfOperations\Edit.cshtml" />
+    <Content Include="Views\HoursOfOperations\Index.cshtml" />
+    <Content Include="Views\HoursOfOperations\ManageContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201603232129447_Change1.resx">
       <DependentUpon>201603232129447_Change1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604051949216_reset relationship between navigation and content.resx">
+      <DependentUpon>201604051949216_reset relationship between navigation and content.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604060114370_NavigationLinkId replaced.resx">
+      <DependentUpon>201604060114370_NavigationLinkId replaced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604060150140_AddNavId.resx">
+      <DependentUpon>201604060150140_AddNavId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604060157449_change2.resx">
+      <DependentUpon>201604060157449_change2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604060304555_fixed table.resx">
+      <DependentUpon>201604060304555_fixed table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604060321551_FixingRelationship2.resx">
+      <DependentUpon>201604060321551_FixingRelationship2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070044467_AboutUsAndHomePageTables.resx">
+      <DependentUpon>201604070044467_AboutUsAndHomePageTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070152154_CleaningDatabase.resx">
+      <DependentUpon>201604070152154_CleaningDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070348378_changedVariableInContactUs.resx">
+      <DependentUpon>201604070348378_changedVariableInContactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070357192_updateContactUs.resx">
+      <DependentUpon>201604070357192_updateContactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604110230488_HoursOfOperationTable.resx">
+      <DependentUpon>201604110230488_HoursOfOperationTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604110236326_HoursOfOperationTable1.resx">
+      <DependentUpon>201604110236326_HoursOfOperationTable1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
