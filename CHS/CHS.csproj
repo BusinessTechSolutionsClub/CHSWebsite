@@ -258,6 +258,10 @@
     <Compile Include="Migrations\201604110236326_HoursOfOperationTable1.Designer.cs">
       <DependentUpon>201604110236326_HoursOfOperationTable1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604111922449_removedhoursofoperationincontactus.cs" />
+    <Compile Include="Migrations\201604111922449_removedhoursofoperationincontactus.Designer.cs">
+      <DependentUpon>201604111922449_removedhoursofoperationincontactus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutUs.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -419,6 +423,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604110236326_HoursOfOperationTable1.resx">
       <DependentUpon>201604110236326_HoursOfOperationTable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604111922449_removedhoursofoperationincontactus.resx">
+      <DependentUpon>201604111922449_removedhoursofoperationincontactus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

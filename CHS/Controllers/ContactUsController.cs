@@ -20,6 +20,7 @@ namespace CHS.Controllers
             var content = db.ContactUs.ToArray();
             ViewBag.Address = content[0].Address;
             ViewBag.CellPhoneNumber = content[0].CellPhoneNumber;
+            ViewBag.HoursOfOperation = db.HoursOfOperations.ToList();
             return View();
         }
 

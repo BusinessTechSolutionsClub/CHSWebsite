@@ -10,11 +10,45 @@
 <hr style="border-color:black;" />
 <div class="container-fluid">
      <div class="row">
-         <div class="col-sm-8">
-            <p>@ViewBag.Address</p>
-        </div>
+         <h3>Christina's Hair Salon</h3>
          <div class="col-sm-4">
-             <p>@ViewBag.CellPhoneNumber</p>
+             <p>Phone: @ViewBag.CellPhoneNumber</p>
+             <p>Address: @ViewBag.Address</p>    
          </div>
-     </div>
+         <div class="col-sm-8">
+             space for map
+         </div>
+        </div>
+         <div class="row">
+            <h3>Hours of Operation:</h3>
+             <div class="col-md-4">
+                 <table class="table table-hover">
+                     <thead>
+                         <tr>
+                             <th></th>
+                             <th></th>
+                             <th></th>
+                         </tr>
+                     </thead>
+                     <tbody>
+
+                         @foreach (var item in ViewBag.HoursOfOperation)
+                         {
+                             <tr>
+                                 <td>
+                                     @item.dayOfWeek
+                                 </td>
+                                 <td>
+                                     @item.openTime
+                                 </td>
+                                 <td>
+                                     @item.closeTime
+                                 </td>
+                             </tr>
+                         }
+                     </tbody>
+                 </table>
+             </div>
+             <div class="col-md-8"> place for map</div>
+         </div>
 </div>
