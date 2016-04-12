@@ -14,6 +14,12 @@ namespace CHS.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        [Authorize]
+        public ActionResult ManageContent()
+        {
+            return View(db.Products.ToList());
+        }
+
         // GET: Products
         public ActionResult Index()
         {
@@ -52,7 +58,7 @@ namespace CHS.Controllers
             {
                 db.Products.Add(product);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("ManageContent");
             }
 
             return View(product);
@@ -84,7 +90,7 @@ namespace CHS.Controllers
             {
                 db.Entry(product).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("ManageContent");
             }
             return View(product);
         }
@@ -112,7 +118,7 @@ namespace CHS.Controllers
             Product product = db.Products.Find(id);
             db.Products.Remove(product);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("ManageContent");
         }
 
         protected override void Dispose(bool disposing)

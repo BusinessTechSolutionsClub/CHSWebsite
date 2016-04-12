@@ -375,6 +375,7 @@
     <Content Include="Views\HoursOfOperations\Edit.cshtml" />
     <Content Include="Views\HoursOfOperations\Index.cshtml" />
     <Content Include="Views\HoursOfOperations\ManageContent.cshtml" />
+    <Content Include="Views\Products\ManageContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
