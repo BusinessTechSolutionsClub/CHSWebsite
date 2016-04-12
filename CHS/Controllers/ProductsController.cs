@@ -17,7 +17,8 @@ namespace CHS.Controllers
         [Authorize]
         public ActionResult ManageContent()
         {
-            return View(db.Products.ToList());
+            var products = db.Products.ToList();
+            return View(products);
         }
 
         // GET: Products

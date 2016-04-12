@@ -1,48 +1,61 @@
 ﻿@model IEnumerable<CHS.Models.HoursOfOperation>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Hours of Operation";
 }
 
-<h2>Hours Of Operations</h2>
+<link href="~/Content/CHSStyles.css" rel="stylesheet" />
+
+
+<h1 class="page-title">Hours of Operation</h1>
+<hr style="border-color:black;" />
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
             <table class="table table-hover">
                 <thead>
                     <tr>
                         <th></th>
                         <th></th>
                         <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
-                   
-                        @foreach (var item in Model)
-                        {
+                    @foreach (var item in Model)
+                    {
                             <tr>
                                 <td>
                                     @item.dayOfWeek
                                 </td>
-                                <td>
-                                    @item.openTime
-                                </td>
+                                @if(item.status=="Closed")
+                                {
+                                    <td>Closed</td>
+                                }
+                                else
+                                {
+                                    <td>
+
+                                        @item.openTime
+                                    </td>
+                                }
+                                
                                 <td>
                                     @item.closeTime
                                 </td>
+                                
                             </tr>
+                      
+                    }
 
-                        }
-
-                          
-
-                </tbody>
+                     </tbody>
             </table>
-
         </div>
-
+        </div>
+        </div>
     </div>
-</div>
+ </div>
 
 
 
