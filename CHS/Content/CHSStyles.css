@@ -1,8 +1,15 @@
 ﻿body {
 }
+
 .page-title{
     text-align:center!important;
 }
+.logo{
+    padding-left:20%;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     display: block!important;
     height: auto!important;
@@ -11,5 +18,10 @@
     max-width: 100%!important;
     min-width:100%!important;
 }
+
+#carousel>.col-xs-12{
+    padding:0;
+}
+
 
 
