@@ -11,26 +11,23 @@
 <div class="container-fluid">
      <div class="row">
          <h3>Christina's Hair Salon</h3>
-         <div class="col-sm-4">
+         <div class="col-sm-6">
              <p>Phone: @ViewBag.CellPhoneNumber</p>
              <p>Address: @ViewBag.Address</p>    
          </div>
-         <div class="col-sm-8">
-             space for map
+         <div class="col-sm-6">
+             <img src="http://placehold.it/300x200">
          </div>
         </div>
          <div class="row">
             <h3>Hours of Operation:</h3>
-             <div class="col-md-4">
-                 <table class="table table-hover">
+             <div class="col-md-6">
+                 <table class="col-sm-4">
                      <thead>
                          <tr>
-                             <th></th>
-                             <th></th>
-                             <th></th>
                          </tr>
                      </thead>
-                     <tbody>
+                     <tbody class="col-sm-4">
 
                          @foreach (var item in ViewBag.HoursOfOperation)
                          {
@@ -38,10 +35,13 @@
                                  <td>
                                      @item.dayOfWeek
                                  </td>
-                                 <td>
-                                     @item.openTime
+                                 <td class="col-sm-1">
+                                     @item.openTime 
                                  </td>
                                  <td>
+                                     -
+                                 </td>
+                                 <td class="col-sm-1">
                                      @item.closeTime
                                  </td>
                              </tr>
@@ -49,6 +49,10 @@
                      </tbody>
                  </table>
              </div>
-             <div class="col-md-8"> place for map</div>
+             <div class="col-md-6"><img src="http://placehold.it/300x200"></div>
+             <div class="row">
+                 <h3>Young Stars Salon</h3>
+                 <p>Phone: 573-474-7775<br />Address: 705 Vandiver Dr. <br />Columbia, MO 65202<br />Facebook: https://www.facebook.com</p>
+             </div>
          </div>
 </div>
