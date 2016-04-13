@@ -3,5 +3,13 @@
 .page-title{
     text-align:center!important;
 }
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block!important;
+    height: auto!important;
+    line-height: 1!important;
+    margin: 0 auto!important;
+    max-width: 100%!important;
+    min-width:100%!important;
+}
 
 
