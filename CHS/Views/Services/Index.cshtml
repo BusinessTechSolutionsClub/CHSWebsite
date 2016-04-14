@@ -11,14 +11,17 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-            <div class="pannel panel-default">
+            <div class="list-group">
                 @foreach (var i in Model)
                 {
-                    <div class="panel-heading">
+                    <div class="list-group-item">
                      @i.ServiceName
-                     <span class="badge" style="float:right">@i.Price</span>
+                        <span class="badge" style="float:right">@i.Price</span>
+                        <br />
+                     <p>@i.EstimatedTime @i.ServiceDescription</p>
+                    
                     </div>
-                    <div class="panel-body">@i.EstimatedTime @i.ServiceDescription</div>
+                   
                 }
              </div>
             

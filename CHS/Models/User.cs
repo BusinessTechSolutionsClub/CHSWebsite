@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 
@@ -10,7 +11,9 @@ namespace CHS.Models
     public class User
     {
         public int Id { get; set; }
+        [DisplayName("First Name")]
         public string FirstName { get; set; }
+        [DisplayName("Last Name")]
         public string LastName { get; set; }
         public string Position { get; set; }
         public virtual ApplicationUser Users { get; set; }
