@@ -21,6 +21,10 @@ namespace CHS.Controllers
             ViewBag.Address = content[0].Address;
             ViewBag.CellPhoneNumber = content[0].CellPhoneNumber;
             ViewBag.HoursOfOperation = db.HoursOfOperations.ToList();
+
+            ViewBag.Address2 = content[1].Address;
+            ViewBag.CellPhoneNumber2 = content[1].CellPhoneNumber;
+            ViewBag.HoursOfOperation2 = db.HoursOfOperations.ToList();
             return View();
         }
 

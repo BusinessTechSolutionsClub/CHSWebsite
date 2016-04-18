@@ -9,50 +9,91 @@
 </h1>
 <hr style="border-color:black;" />
 <div class="container-fluid">
-     <div class="row">
-         <h3>Christina's Hair Salon</h3>
-         <div class="col-sm-6">
-             <p>Phone: @ViewBag.CellPhoneNumber</p>
-             <p>Address: @ViewBag.Address</p>    
-         </div>
-         <div class="col-sm-6">
-             <img src="http://placehold.it/300x200">
-         </div>
-        </div>
-         <div class="row">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5">
+            <h3>Christina's Hair Salon</h3>
+            <p>Phone: @ViewBag.CellPhoneNumber</p>
+            <p>Address: @ViewBag.Address</p>
             <h3>Hours of Operation:</h3>
-             <div class="col-md-6">
-                 <table class="col-sm-4">
-                     <thead>
-                         <tr>
-                         </tr>
-                     </thead>
-                     <tbody class="col-sm-4">
-
-                         @foreach (var item in ViewBag.HoursOfOperation)
-                         {
-                             <tr>
-                                 <td>
-                                     @item.dayOfWeek
-                                 </td>
-                                 <td class="col-sm-1">
-                                     @item.openTime 
-                                 </td>
-                                 <td>
-                                     -
-                                 </td>
-                                 <td class="col-sm-1">
-                                     @item.closeTime
-                                 </td>
-                             </tr>
-                         }
-                     </tbody>
-                 </table>
-             </div>
-             <div class="col-md-6"><img src="http://placehold.it/300x200"></div>
-             <div class="row">
-                 <h3>Young Stars Salon</h3>
-                 <p>Phone: 573-474-7775<br />Address: 705 Vandiver Dr. <br />Columbia, MO 65202<br />Facebook: https://www.facebook.com</p>
-             </div>
+            <table class="col-sm-4">
+                <thead>
+                    <tr></tr>
+                </thead>
+                <tbody class="col-sm-4">
+                    @foreach (var item in ViewBag.HoursOfOperation)
+                    {
+                        <tr>
+                            <td>
+                                @item.dayOfWeek
+                            </td>
+                            @if (item.status == "Closed")
+                            {
+                                <td class="col-sm-4">Closed</td>
+                            }
+                            else
+                            {
+                                <td class="col-sm-1">
+                                    @item.openTime
+                                </td>
+                                <td class="col-lg-12">
+                                    -
+                                </td>
+                            }
+                            <td class="col-sm-1">
+                                @item.closeTime
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
          </div>
+            <h3>Young Star's Hair Salon</h3>
+            <p>Phone: @ViewBag.CellPhoneNumber2</p>
+            <p>Address: @ViewBag.Address2</p>
+            <h3>Hours of Operation:</h3>
+        <table class="col-sm-4">
+            <thead>
+                <tr></tr>
+            </thead>
+            <tbody class="col-sm-4">
+                @foreach (var item in ViewBag.HoursOfOperation)
+                {
+                    <tr>
+                        <td>
+                            @item.dayOfWeek
+                        </td>
+                        @if (item.status == "Closed")
+                        {
+                            <td class="col-sm-1">Closed</td>
+                        }
+                        else
+                        {
+                            <td class="col-sm-1">
+                                @item.openTime
+                            </td>
+
+                        <td class="col-lg-12">
+                            -
+                        </td>
+                        }
+                        <td class="col-sm-2">
+                            @item.closeTime
+                        </td>
+                    </tr>
+                    }
+            </tbody>
+        </table>
+
+    </div>
+    <div class="row"><br /><br /></div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d99280.90750606456!2d-92.44589898068988!3d38.95760186963359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x87dcb6046f52ae91%3A0xe605722409309112!2schristinas+hair+salon!3m2!1d38.957622799999996!2d-92.37585899999999!5e0!3m2!1sen!2sus!4v1460738312938" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d99261.74778035612!2d-92.39837998026425!3d38.971275067497395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x87dcc82441de18b7%3A0x23f202a1c8fc6f33!2syoung+stars+salon+columbia+mo!3m2!1d38.971295999999995!2d-92.32834!5e0!3m2!1sen!2sus!4v1460740836324" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+     </div>       
 </div>
