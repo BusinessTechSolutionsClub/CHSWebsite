@@ -51,7 +51,7 @@ namespace CHS.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,ServiceName,ServiceDescription,Price,EstimatedTime")] Service service)
+        public ActionResult Create([Bind(Include = "Id,ServiceName,ServiceDescription,Price,EstimatedTime, women")] Service service)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +83,7 @@ namespace CHS.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,ServiceName,ServiceDescription,Price,EstimatedTime")] Service service)
+        public ActionResult Edit([Bind(Include = "Id,ServiceName,ServiceDescription,Price,EstimatedTime,women")] Service service)
         {
             if (ModelState.IsValid)
             {

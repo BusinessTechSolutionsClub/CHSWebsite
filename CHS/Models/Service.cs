@@ -16,5 +16,7 @@ namespace CHS.Models
         public string Price { get; set; }
         [DisplayName("Estimated Time")]
         public string EstimatedTime { get; set; }
+        [DisplayName("Is this service for women?")]
+        public bool women { get; set; }
     }
 }
