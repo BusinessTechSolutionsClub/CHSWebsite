@@ -4,19 +4,22 @@
     ViewBag.Title = "Index";
 }
 
+<!--Included custom css file-->
+<link href="~/Content/CHSStyles.css" rel="stylesheet" />
+
 <h1 style="text-align:center;">
     Contact Us
 </h1>
 <hr style="border-color:black;" />
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-2"></div>
+        <div class="col-sm-1"></div>
         <div class="col-sm-5">
-            <h3>Christina's Hair Salon</h3>
-            <p>Phone: @ViewBag.CellPhoneNumber</p>
-            <p>Address: @ViewBag.Address</p>
-            <h3>Hours of Operation:</h3>
-            <table class="col-sm-4">
+            <h3 class="section1">Christina's Hair Salon</h3>
+            <p class="section1">Address: @ViewBag.Address</p>
+            <p class="section1">Phone: @ViewBag.CellPhoneNumber</p>
+            <h3 class="section1">Hours of Operation:</h3>
+            <table class="section1">
                 <thead>
                     <tr></tr>
                 </thead>
@@ -29,30 +32,34 @@
                             </td>
                             @if (item.status == "Closed")
                             {
-                                <td class="col-sm-4">Closed</td>
+                                <td class="col-sm-1">Closed</td>
                             }
                             else
                             {
                                 <td class="col-sm-1">
                                     @item.openTime
                                 </td>
-                                <td class="col-lg-12">
+
+                                <td>
                                     -
                                 </td>
                             }
-                            <td class="col-sm-1">
+                            <td class="col-sm-2">
                                 @item.closeTime
                             </td>
                         </tr>
                     }
                 </tbody>
-            </table>
-         </div>
-            <h3>Young Star's Hair Salon</h3>
-            <p>Phone: @ViewBag.CellPhoneNumber2</p>
-            <p>Address: @ViewBag.Address2</p>
-            <h3>Hours of Operation:</h3>
-        <table class="col-sm-4">
+            </table><br />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d99280.90750606456!2d-92.44589898068988!3d38.95760186963359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x87dcb6046f52ae91%3A0xe605722409309112!2schristinas+hair+salon!3m2!1d38.957622799999996!2d-92.37585899999999!5e0!3m2!1sen!2sus!4v1460738312938" frameborder="0" style="border:0" allowfullscreen></iframe>            
+        </div>
+        <div class="col-sm-1"></div>
+         <div class="col-sm-5">
+            <h3 class="section2">Young Star's Hair Salon</h3>
+            <p class="section2">Address: @ViewBag.Address2</p>
+            <p class="section2">Phone: @ViewBag.CellPhoneNumber2</p>
+            <h3 class="section2">Hours of Operation:</h3>
+        <table class="section2">
             <thead>
                 <tr></tr>
             </thead>
@@ -73,27 +80,18 @@
                                 @item.openTime
                             </td>
 
-                        <td class="col-lg-12">
-                            -
-                        </td>
+                                <td>
+                                    -
+                                </td>
                         }
                         <td class="col-sm-2">
                             @item.closeTime
                         </td>
                     </tr>
-                    }
+                }
             </tbody>
-        </table>
-
+        </table><br />
+             <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d99261.74778035612!2d-92.39837998026425!3d38.971275067497395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x87dcc82441de18b7%3A0x23f202a1c8fc6f33!2syoung+stars+salon+columbia+mo!3m2!1d38.971295999999995!2d-92.32834!5e0!3m2!1sen!2sus!4v1460740836324" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>      
     </div>
-    <div class="row"><br /><br /></div>
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d99280.90750606456!2d-92.44589898068988!3d38.95760186963359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x87dcb6046f52ae91%3A0xe605722409309112!2schristinas+hair+salon!3m2!1d38.957622799999996!2d-92.37585899999999!5e0!3m2!1sen!2sus!4v1460738312938" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            <div class="col-sm-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d99261.74778035612!2d-92.39837998026425!3d38.971275067497395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x87dcc82441de18b7%3A0x23f202a1c8fc6f33!2syoung+stars+salon+columbia+mo!3m2!1d38.971295999999995!2d-92.32834!5e0!3m2!1sen!2sus!4v1460740836324" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-     </div>       
 </div>

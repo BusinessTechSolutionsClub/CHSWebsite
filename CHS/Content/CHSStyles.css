@@ -23,6 +23,27 @@
     padding:0;
 }
 
+.section1 {
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width:77%;
+}
 
+.section2 {
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width:85%;
+}
 
+iframe {
+    width: 325px;
+    height: 200px;
+}
 
+tablecenter {
+    width: 73%;
+}
