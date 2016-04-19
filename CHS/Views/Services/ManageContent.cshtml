@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<CHS.Models.Service>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Manage Content";
 }
 
-<h2>Index</h2>
+<h2>Manage Content</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -24,6 +24,7 @@
             @Html.DisplayNameFor(model => model.EstimatedTime)
         </th>
         <th></th>
+        <th></th>
     </tr>
 
     @foreach (var item in Model)
@@ -41,11 +42,15 @@
             <td>
                 @Html.DisplayFor(modelItem => item.EstimatedTime)
             </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.women)
+            </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
                 @Html.ActionLink("Details", "Details", new { id = item.Id }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>
+
         </tr>
     }
 

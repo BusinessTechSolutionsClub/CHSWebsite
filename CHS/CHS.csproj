@@ -262,6 +262,10 @@
     <Compile Include="Migrations\201604111922449_removedhoursofoperationincontactus.Designer.cs">
       <DependentUpon>201604111922449_removedhoursofoperationincontactus.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604181912567_ServicesTableUpdata adding women attribute.cs" />
+    <Compile Include="Migrations\201604181912567_ServicesTableUpdata adding women attribute.Designer.cs">
+      <DependentUpon>201604181912567_ServicesTableUpdata adding women attribute.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutUs.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -377,6 +381,7 @@
     <Content Include="Views\HoursOfOperations\Index.cshtml" />
     <Content Include="Views\HoursOfOperations\ManageContent.cshtml" />
     <Content Include="Views\Products\ManageContent.cshtml" />
+    <Content Include="Views\ContactUs\ManageContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -428,6 +433,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604111922449_removedhoursofoperationincontactus.resx">
       <DependentUpon>201604111922449_removedhoursofoperationincontactus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604181912567_ServicesTableUpdata adding women attribute.resx">
+      <DependentUpon>201604181912567_ServicesTableUpdata adding women attribute.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

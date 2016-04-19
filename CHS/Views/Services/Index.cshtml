@@ -9,20 +9,43 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-            <div class="pannel panel-default">
+        <div class="col-md-6">
+            <h3 class="sub-categories">Women Services</h3>
+            <div class="list-group">
                 @foreach (var i in Model)
                 {
-                    <div class="panel-heading">
-                     @i.ServiceName
-                     <span class="badge" style="float:right">@i.Price</span>
-                    </div>
-                    <div class="panel-body">@i.EstimatedTime @i.ServiceDescription</div>
+                    if (i.women == true)
+                    {
+                        <div class="list-group-item">
+                            @i.ServiceName
+                            <span class="badge" style="float:right">@i.Price</span>
+                            <br />
+                            <p>@i.EstimatedTime @i.ServiceDescription</p>
+
+                        </div>
+                    }
+
+
                 }
              </div>
             
         </div>
-        <div class="col-md-2"></div>
-    </div>
+        <div class="col-md-6">
+            <h3 class="sub-categories">Man Services</h3>
+            <div class="list-group">
+                @foreach (var i in Model)
+                {
+                    if (i.women == false)
+                    {
+                        <div class="list-group-item">
+                            @i.ServiceName
+                            <span class="badge" style="float:right">@i.Price</span>
+                            <br />
+                            <p>@i.EstimatedTime @i.ServiceDescription</p>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+     </div>
 </div>
