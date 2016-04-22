@@ -111,16 +111,6 @@ closetime {
     width: 90%;
 }
 
-@media only screen and (max-width:561px){
-    .section1 {
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: 100px;
-    width: 77%;
-}
-}
-
 #closedPosition {
     width: 23%;
     padding-left: 25%;
