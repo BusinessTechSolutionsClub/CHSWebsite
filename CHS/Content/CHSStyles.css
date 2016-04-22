@@ -32,9 +32,9 @@
 
 @media (min-width: 1150px) {
     .container {
-        width: 100%;
+    width: 100%;
         padding: 0;
-    }
+}
 
     .col-sm-12 {
         margin: 0px;
@@ -42,9 +42,10 @@
     }
 
     .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
+    margin-left: 0;
+    margin-right: 0;
+}
+}
 
     .carousel-inner > .item > img, .carousel-inner > .item > a > img {
         display: block !important;
@@ -53,46 +54,66 @@
         margin: 0 auto !important;
         max-width: 100% !important;
         min-width: 100% !important;
-    }
+} 
 
 
     .full-screen-carousel {
         width: 100% !important;
-    }
+}
 
     .carousel-img {
         width: 1150px;
         height: 500px !important;
-    }
+}
 
     #carousel > .col-xs-12 {
         padding: 0;
-    }
-
-    .section1 {
-        right: 0;
-        left: 0;
-        margin-right: auto;
-        margin-left: auto;
-        width: 77%;
-    }
-
-    .section2 {
-        right: 0;
-        left: 0;
-        margin-right: auto;
-        margin-left: auto;
-        width: 85%;
-    }
 }
+
+.section1 {
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+        width: 77%;
+}
+
+/*.section2 {
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width:85%;
+}*/
 
 iframe {
-    width: 350px;
-    height: 200px;
+    width: 317px;
+    height: 225px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
 }
 
-tablecenter {
-    width: 73%;
+.tablecenter {
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+closetime {
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+
+#closedPosition {
+    width: 23%;
+    padding-left: 25%;
 }
 
 /*Styles for products page*/
