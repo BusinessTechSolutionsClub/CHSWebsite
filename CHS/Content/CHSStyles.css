@@ -30,57 +30,60 @@
     }
 }
 
-@media (min-width: 1150px){
+@media (min-width: 1150px) {
     .container {
-    width: 100%;
-    padding:0;
-}
-    .col-sm-12{
-        margin:0px;
-        padding:0px;
+        width: 100%;
+        padding: 0;
     }
+
+    .col-sm-12 {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .row {
-    margin-left: 0;
-    margin-right: 0;
-}
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    display: block!important;
-    height: 500px!important;
-    line-height: 1!important;
-    margin: 0 auto!important;
-    max-width: 100%!important;
-    min-width:100%!important;
-} 
+        display: block !important;
+        height: 500px !important;
+        line-height: 1 !important;
+        margin: 0 auto !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
 
 
-.full-screen-carousel{
-    width:100%!important;
-}
+    .full-screen-carousel {
+        width: 100% !important;
+    }
 
-.carousel-img{
-    width:1150px;
-    height:500px!important;
-        
-}
+    .carousel-img {
+        width: 1150px;
+        height: 500px !important;
+    }
 
-#carousel>.col-xs-12{
-    padding:0;
-}
+    #carousel > .col-xs-12 {
+        padding: 0;
+    }
 
-.section1 {
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    width:77%;
-}
+    .section1 {
+        right: 0;
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        width: 77%;
+    }
 
-.section2 {
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    width:85%;
+    .section2 {
+        right: 0;
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        width: 85%;
+    }
 }
 
 iframe {
@@ -90,4 +93,21 @@ iframe {
 
 tablecenter {
     width: 73%;
+}
+
+/*Styles for products page*/
+.products-img {
+    float: left;
+    margin-right: 5px;
+    width: 74px;
+    height: 60px;
+}
+.products-title{
+    font-weight:bold;
+}
+
+
+/*Styles for services page*/
+.service-title{
+    font-weight:bold;
 }
