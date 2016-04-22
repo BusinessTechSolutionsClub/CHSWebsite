@@ -100,7 +100,7 @@ iframe {
     right: 0;
     left: 0;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 40px;
 }
 /*Styles for contact us page*/
 closetime {
