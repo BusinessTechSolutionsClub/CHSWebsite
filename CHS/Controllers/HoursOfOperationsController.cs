@@ -20,6 +20,8 @@ namespace CHS.Controllers
             var hoursOfOperations = db.HoursOfOperations.ToList();
             return View(hoursOfOperations);
         }
+
+        [Authorize]
         public ActionResult ManageContent()
         {
             return View(db.HoursOfOperations.ToList());

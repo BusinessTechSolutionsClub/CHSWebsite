@@ -20,6 +20,7 @@ namespace CHS.Controllers
             return View(db.Services.ToList());
         }
 
+        [Authorize]
         public ActionResult ManageContent()
         {
             return View(db.Services.ToList());
