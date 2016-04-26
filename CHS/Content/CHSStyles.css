@@ -30,10 +30,13 @@
     }
 }
 
-@media (min-width: 1150px) {
+
+
+    @media (min-width: 1200px) {
     .container {
     width: 100%;
         padding: 0;
+      
 }
 
     .col-sm-12 {
@@ -49,7 +52,7 @@
 
     .carousel-inner > .item > img, .carousel-inner > .item > a > img {
         display: block !important;
-        height: 500px !important;
+        height: auto!important;
         line-height: 1 !important;
         margin: 0 auto !important;
         max-width: 100% !important;
@@ -133,3 +136,21 @@ closetime {
 .service-title{
     font-weight:bold;
 }
+
+
+
+/*Styles for About Us page*/
+.about{
+    margin-left:50px;
+    margin-right: 50px;
+}
+.team-photo{
+    width:350px;
+    height:170px;
+}
+.individual-photo{
+    width:200px;
+    height:200px;
+}
+
+
