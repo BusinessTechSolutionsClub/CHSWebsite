@@ -5,7 +5,7 @@
     text-align:center!important;
 }
 .logo{
-    padding-left:22%;
+    padding-left:30%;
     padding-top:5%;
     padding-bottom:5%;
 }
@@ -24,9 +24,9 @@
 
 }
 
-@media only screen and (max-width:777px){
+@media only screen and (max-width:900px){
     .logo{
-        display:none;
+       display:none;
     }
 }
 
@@ -151,6 +151,16 @@ closetime {
 .individual-photo{
     width:200px;
     height:200px;
+}
+
+.for-home{
+    width: 200px;
+    height:150px;
+    margin-left: 80px;
+}
+.homeP{
+    margin-left: 125px;
+    margin-top:10px;
 }
 
 
