@@ -2,8 +2,8 @@
     ViewBag.Title = "Home Page";
 }
 <link href="~/Content/CHSStyles.css" rel="stylesheet" />
-<img class="logo" src="~/Images/12992152_878683012254808_373451703_n.png" />
 
+<img class="logo" src="~/Images/12992152_878683012254808_373451703_n.png" />
 <!--Carousel Starts -->
 
 <div id="carousel">
@@ -18,10 +18,19 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="http://placehold.it/1150x500/302235/ffffff" alt="Slide 1">
+                    <img src="~/Images/SliderImages/HairCutAndStyle.jpg" />
                 </div>
+
+               <!--
+                   <div class="item">
+                     <img src="http://placehold.it/1150x500/302235/ffffff" alt="Slide 2">
+                </div>
+               --> 
+
                 <div class="item">
-                    <img src="http://placehold.it/1150x500/573e5f/ffffff" alt="Slide 2">
+                    <img src="~/Images/SliderImages/bridal.jpg" />
+
+                    <!-- <img src="http://placehold.it/1150x500/302235/ffffff" alt="Slide 2">-->
                 </div>
             </div>
             <!-- Controls -->
@@ -53,20 +62,25 @@
 
 <div class="row">
     <div class="col-md-4">
-        <h3>Read about our company here!</h3>
-        <img src="http://placehold.it/200x150/573e5f/ffffff">
-        <p><a class="btn btn-default" href="/AboutUs/Index">Learn more &raquo;</a></p>
+        <h2>Read about our company here!</h2>
+        
+        <img class="for-home" src="~/Images/3.jpg" />
+       <!--
+            <img src="http://placehold.it/200x150/573e5f/ffffff">
+       --> 
+        <p><a class="btn btn-default homeP" href="/AboutUs/Index">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>See a list of services here!</h2>
-        <img src="http://placehold.it/200x150/573e5f/ffffff">
-        <p><a class="btn btn-default" href="Services/Index">Learn more &raquo;</a></p>
+
+        <img class="for-home" src="~/Images/SliderImages/slide1.jpg" />
+        <p><a class="btn btn-default homeP" href="Services/Index">Learn more &raquo;</a></p>
        
     </div>
     <div class="col-md-4">
         <h2>Check out our products here!</h2>
-        <img src="http://placehold.it/200x150/573e5f/ffffff">
-        <p><a class="btn btn-default" href="/Products/Index">Learn more &raquo;</a></p>
+        <img class="for-home" src="~/Images/thai-shampoo-353536_960_720.jpg" />
+        <p><a class="btn btn-default homeP" href="/Products/Index">Learn more &raquo;</a></p>
     </div>
 </div>
 

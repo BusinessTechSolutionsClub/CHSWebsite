@@ -5,7 +5,7 @@
     text-align:center!important;
 }
 .logo{
-    padding-left:22%;
+    padding-left:30%;
     padding-top:5%;
     padding-bottom:5%;
 }
@@ -24,16 +24,19 @@
 
 }
 
-@media only screen and (max-width:777px){
+@media only screen and (max-width:900px){
     .logo{
-        display:none;
+       display:none;
     }
 }
 
-@media (min-width: 1150px) {
+
+
+    @media (min-width: 1200px) {
     .container {
     width: 100%;
         padding: 0;
+      
 }
 
     .col-sm-12 {
@@ -49,7 +52,7 @@
 
     .carousel-inner > .item > img, .carousel-inner > .item > a > img {
         display: block !important;
-        height: 500px !important;
+        height: auto!important;
         line-height: 1 !important;
         margin: 0 auto !important;
         max-width: 100% !important;
@@ -133,3 +136,31 @@ iframe {
 .service-title{
     font-weight:bold;
 }
+
+
+
+/*Styles for About Us page*/
+.about{
+    margin-left:50px;
+    margin-right: 50px;
+}
+.team-photo{
+    width:350px;
+    height:170px;
+}
+.individual-photo{
+    width:200px;
+    height:200px;
+}
+
+.for-home{
+    width: 200px;
+    height:150px;
+    margin-left: 80px;
+}
+.homeP{
+    margin-left: 125px;
+    margin-top:10px;
+}
+
+
