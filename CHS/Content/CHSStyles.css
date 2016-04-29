@@ -71,12 +71,12 @@
 }
 
 /*-------Styles for contact us page-------*/
-/*.section1 {
+.section1 {
     right: 0;
     left: 0;
     margin-right: auto;
     margin-left: auto;
-}*/
+}
 
 
 /*.section2 {
@@ -104,17 +104,17 @@ iframe {
     margin-left: auto;
 }*/
 
-closetime {
+/*closetime {
     right: 0;
     left: 0;
     margin-right: auto;
     margin-left: auto;
-    width: 90%;
-}
+    width: 150%;
+}*/
 
 #closedPosition {
-    width: 23%;
-    padding-left: 31%;
+    width: 25%;
+    padding-left: 23%;
 }
 
 /*Styles for products page*/
